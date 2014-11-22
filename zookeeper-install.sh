@@ -14,4 +14,6 @@ echo 'clientPort=2181' >> /home/ubuntu/zookeeper-3.4.6/conf/zoo.cfg
 echo 'initLimit=5' >> /home/ubuntu/zookeeper-3.4.6/conf/zoo.cfg
 echo 'syncLimit=2' >> /home/ubuntu/zookeeper-3.4.6/conf/zoo.cfg
 
+mkdir /home/ubuntu/data/zookeeper
+
 exec bash
