@@ -4,13 +4,14 @@ wget --no-check-certificate http://mirror.olnevhost.net/pub/apache/zookeeper/zoo
 tar -xvzf zookeeper-3.4.6.tar.gz
 
 echo 'export ZK_HOME=/home/ubuntu/zookeeper-3.4.6' >> ~/.bashrc
-echo 'export PATH=$ZK_HOME/bin:$PATH' >> ~/.bashrc
-source ~/.bashrc
+echo 'export PATH=/home/ubuntu/zookeeper-3.4.6/bin:$PATH' >> ~/.bashrc
 
-touch $ZK_HOME/conf/zoo.cfg
+touch /home/ubuntu/zookeeper-3.4.6/conf/zoo.cfg
 
-echo 'tickTime=2000' >> $ZK_HOME/conf/zoo.cfg
-echo 'dataDir=/home/ubuntu/data/zookeeper' >> $ZK_HOME/conf/zoo.cfg
-echo 'clientPort=2181' >> $ZK_HOME/conf/zoo.cfg
-echo 'initLimit=5' >> $ZK_HOME/conf/zoo.cfg
-echo 'syncLimit=2' >> $ZK_HOME/conf/zoo.cfg
+echo 'tickTime=2000' >> /home/ubuntu/zookeeper-3.4.6/conf/zoo.cfg
+echo 'dataDir=/home/ubuntu/data/zookeeper' >> /home/ubuntu/zookeeper-3.4.6/conf/zoo.cfg
+echo 'clientPort=2181' >> /home/ubuntu/zookeeper-3.4.6/conf/zoo.cfg
+echo 'initLimit=5' >> /home/ubuntu/zookeeper-3.4.6/conf/zoo.cfg
+echo 'syncLimit=2' >> /home/ubuntu/zookeeper-3.4.6/conf/zoo.cfg
+
+exec bash
