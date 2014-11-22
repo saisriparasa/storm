@@ -3,7 +3,7 @@
 sudo apt-get update
 wget --no-check-certificate https://s3.amazonaws.com/aws-sai-sriparasa-east/jdk-7u65-linux-x64.tar.gz
 sudo mkdir /opt/jdk
-tar -xvzf jdk-7u45-linux-x64.tar.gz
+tar -xvzf jdk-7u65-linux-x64.tar.gz
 sudo mv jdk1.7.0_65/ /opt/jdk/
 
 sudo chown -R ubuntu:ubuntu /opt/jdk/jdk1.7.0_65/
