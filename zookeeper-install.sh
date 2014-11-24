@@ -15,5 +15,9 @@ echo 'initLimit=5' >> /home/ubuntu/zookeeper-3.4.6/conf/zoo.cfg
 echo 'syncLimit=2' >> /home/ubuntu/zookeeper-3.4.6/conf/zoo.cfg
 
 mkdir /home/ubuntu/data/zookeeper
+touch /home/ubuntu/data/zookeeper/myid
+
+#id# - id number should be specific to the zookeeper node 
+#echo 'id#' >> /home/ubuntu/data/zookeeper/myid 
 
 exec bash
